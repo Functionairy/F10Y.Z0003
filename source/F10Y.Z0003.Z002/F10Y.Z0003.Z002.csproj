@@ -8,14 +8,14 @@
     <Version>1.0.0</Version>
     <Authors>DCoats</Authors>
     <Copyright>Copyright (c) Functionairy 2025</Copyright>
-    <Description>Instance set, flow, and search descriptor values.</Description>
+    <Description>Instance set search descriptor values for the F10Y.Z0003 instance set, flow, and search descriptor values project</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <RepositoryUrl>https://github.com/Functionairy/F10Y.Z0003.git</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\F10Y.Z0003.Z000\F10Y.Z0003.Z000.csproj" />
-    <ProjectReference Include="..\F10Y.Z0003.Z001\F10Y.Z0003.Z001.csproj" />
-    <ProjectReference Include="..\F10Y.Z0003.Z002\F10Y.Z0003.Z002.csproj" />
+    <ProjectReference Include="..\..\..\F10Y.L0026\source\F10Y.L0026.T004\F10Y.L0026.T004.csproj" />
+    <ProjectReference Include="..\..\..\F10Y.L0062\source\F10Y.L0062.L002.T000\F10Y.L0062.L002.T000.csproj" />
+    <ProjectReference Include="..\..\..\F10Y.Z0005\source\F10Y.Z0005.Z002\F10Y.Z0005.Z002.csproj" />
+    <ProjectReference Include="..\..\..\F10Y.L0062\source\F10Y.L0062.L002.Z000\F10Y.L0062.L002.Z000.csproj" />
   </ItemGroup>
 </Project>

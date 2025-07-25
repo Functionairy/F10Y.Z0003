@@ -1,0 +1,12 @@
+﻿
+global using For_SetEqualityOperationDescriptors = F10Y.L0062.L002.T000;
+
+global using IInstanceSetSearchDescriptor = F10Y.L0026.T004.IInstanceSetSearchDescriptor;
+
+global using InstanceSetSearchDescriptor_Aggregate = F10Y.L0026.T004.InstanceSetSearchDescriptor_Aggregate;
+global using InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor;
+global using InstanceSetSearchDescriptor_DomainSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_DomainSearchDescriptor;
+global using InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor;
+global using InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor;
+global using InstanceSetSearchDescriptor_NetVersionSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_NetVersionSearchDescriptor;
+global using InstanceSetSearchDescriptor_VisibilitySearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_VisibilitySearchDescriptor;
