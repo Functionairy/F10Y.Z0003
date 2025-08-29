@@ -13,6 +13,7 @@ namespace F10Y.Z0003.Z000
         public static L0026.T001.IDomainDescriptorOperator DomainDescriptorOperator => L0026.T001.DomainDescriptorOperator.Instance;
         public static IDomainDescriptors DomainDescriptors => Z000.DomainDescriptors.Instance;
         public static IDomains Domains => Z000.Domains.Instance;
+        public static L0026.T002.IDomainSearchDescriptorOperator DomainSearchDescriptorOperator => L0026.T002.DomainSearchDescriptorOperator.Instance;
         public static IDomainSets DomainSets => Z000.DomainSets.Instance;
         public static L0000.IGuidOperator GuidOperator => L0000.GuidOperator.Instance;
         public static L0026.T003.IInstanceSetFlowDescriptorOperator InstanceSetFlowDescriptorOperator => L0026.T003.InstanceSetFlowDescriptorOperator.Instance;
