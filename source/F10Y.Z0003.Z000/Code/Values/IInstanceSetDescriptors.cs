@@ -19,7 +19,7 @@ namespace F10Y.Z0003.Z000
         /// <summary>
         /// .NET Standard 2.1 foundation library. (Unopinionated, no custom data types.)
         /// </summary>
-        public InstanceSetDescriptor F10Y_L0000 => new()
+        InstanceSetDescriptor F10Y_L0000 => new()
         {
             Descriptor = Instances.Descriptors.For_F10Y_L0000,
 
@@ -41,7 +41,7 @@ namespace F10Y.Z0003.Z000
         /// <summary>
         /// .NET Standard 2.1 foundation library, Functionairy-opinioned. (No custom data types.)
         /// </summary>
-        public InstanceSetDescriptor F10Y_L0001 => new()
+        InstanceSetDescriptor F10Y_L0001 => new()
         {
             Descriptor = Instances.Descriptors.For_F10Y_L0001,
 
@@ -63,7 +63,7 @@ namespace F10Y.Z0003.Z000
         /// <summary>
         /// Files convention. (Functionairy-opinioned, .NET Standard 2.1)
         /// </summary>
-        public InstanceSetDescriptor F10Y_L0001_L001 => new()
+        InstanceSetDescriptor F10Y_L0001_L001 => new()
         {
             Descriptor = Instances.Descriptors.For_F10Y_L0001_L001,
 
@@ -85,7 +85,7 @@ namespace F10Y.Z0003.Z000
         /// <summary>
         /// .NET Project file XML node (element and attribute) name values library.
         /// </summary>
-        public InstanceSetDescriptor F10Y_L0006_Z000 => new()
+        InstanceSetDescriptor F10Y_L0006_Z000 => new()
         {
             Descriptor = Instances.Descriptors.For_F10Y_L0006_Z000,
 
@@ -107,7 +107,7 @@ namespace F10Y.Z0003.Z000
         /// <summary>
         /// .NET 6.0 foundation library. (Unopinionated)
         /// </summary>
-        public InstanceSetDescriptor F10Y_L0060 => new()
+        InstanceSetDescriptor F10Y_L0060 => new()
         {
             Descriptor = Instances.Descriptors.For_F10Y_L0060,
 
@@ -129,7 +129,7 @@ namespace F10Y.Z0003.Z000
         /// <summary>
         /// .NET 8.0 foundation library. (Unopinionated)
         /// </summary>
-        public InstanceSetDescriptor F10Y_L0080 => new()
+        InstanceSetDescriptor F10Y_L0080 => new()
         {
             Descriptor = Instances.Descriptors.For_F10Y_L0080,
 
@@ -151,7 +151,7 @@ namespace F10Y.Z0003.Z000
         /// <summary>
         /// Path and path-part values.
         /// </summary>
-        public InstanceSetDescriptor F10Y_Z0011_Z001 => new()
+        InstanceSetDescriptor F10Y_Z0011_Z001 => new()
         {
             Descriptor = Instances.Descriptors.For_F10Y_Z0011_Z001,
 
