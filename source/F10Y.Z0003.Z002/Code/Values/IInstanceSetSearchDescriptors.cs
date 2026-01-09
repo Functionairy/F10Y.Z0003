@@ -10,7 +10,7 @@ namespace F10Y.Z0003.Z002
     {
         #region Applicabilities
 
-        public InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor Find_Applicability_General => new()
+        InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor Find_Applicability_General => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Applicability_General),
@@ -25,7 +25,7 @@ namespace F10Y.Z0003.Z002
 
         #region Domains
 
-        public InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_CSharp => new()
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_CSharp => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Domain_CSharp),
@@ -36,7 +36,18 @@ namespace F10Y.Z0003.Z002
             DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_CSharp
         };
 
-        public InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_Examples => new()
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_DomainNames => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_DomainNames),
+                "Find domain name domain instance sets (yes, this is recursive).",
+                "29D4101A-1FD1-4A24-B032-E8623E5A7906")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_DomainNames
+        };
+
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_Examples => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Domain_Examples),
@@ -47,7 +58,7 @@ namespace F10Y.Z0003.Z002
             DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_Examples
         };
 
-        public InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_PathAndPathParts => new()
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_PathAndPathParts => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Domain_PathAndPathParts),
@@ -58,7 +69,7 @@ namespace F10Y.Z0003.Z002
             DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_PathAndPathParts
         };
 
-        public InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_ProjectXmlNodeNames_Subsets => new()
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_ProjectXmlNodeNames_Subsets => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
@@ -69,7 +80,7 @@ namespace F10Y.Z0003.Z002
             DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_ProjectXmlNodeNames_Subsets
         };
 
-        public InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_ProjectXmlNodeNames_Supersets => new()
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_ProjectXmlNodeNames_Supersets => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Domain_ProjectXmlNodeNames_Supersets),
@@ -84,7 +95,7 @@ namespace F10Y.Z0003.Z002
 
         #region Instance Set Types
 
-        public InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor Find_FoundationLibraries => new()
+        InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor Find_FoundationLibraries => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_FoundationLibraries),
@@ -99,7 +110,18 @@ namespace F10Y.Z0003.Z002
 
         #region Instance Varieties
 
-        public InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor Find_Values_AbsoluteDirectUnadorned => new()
+        InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor Find_Values => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Values),
+                "Find values instance sets.",
+                "A42220FA-7FA8-40BF-A0D0-8937543B6B85")
+            ,
+            Value_IfMissingDescriptor = false, // Must have the instance variety.
+            InstanceVarietySearchDescriptor = Instances.InstanceVarietySearchDescriptors.Values
+        };
+
+        InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor Find_Values_AbsoluteDirectUnadorned => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Values_AbsoluteDirectUnadorned),
@@ -114,7 +136,7 @@ namespace F10Y.Z0003.Z002
 
         #region .NET Versions
 
-        public InstanceSetSearchDescriptor_NetVersionSearchDescriptor Find_NetVersion_netstandard2_1 => new()
+        InstanceSetSearchDescriptor_NetVersionSearchDescriptor Find_NetVersion_netstandard2_1 => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                nameof(Find_NetVersion_netstandard2_1),
@@ -125,7 +147,7 @@ namespace F10Y.Z0003.Z002
             NetVersionSearchDescriptor = Instances.NetVersionSearchDescriptors.Find_netstandard2_1
         };
 
-        public InstanceSetSearchDescriptor_NetVersionSearchDescriptor Find_NetVersion_net6 => new()
+        InstanceSetSearchDescriptor_NetVersionSearchDescriptor Find_NetVersion_net6 => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                nameof(Find_NetVersion_netstandard2_1),
@@ -136,7 +158,7 @@ namespace F10Y.Z0003.Z002
             NetVersionSearchDescriptor = Instances.NetVersionSearchDescriptors.Find_net6_0
         };
 
-        public InstanceSetSearchDescriptor_NetVersionSearchDescriptor Find_NetVersion_net8 => new()
+        InstanceSetSearchDescriptor_NetVersionSearchDescriptor Find_NetVersion_net8 => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                nameof(Find_NetVersion_netstandard2_1),
@@ -151,7 +173,7 @@ namespace F10Y.Z0003.Z002
 
         #region Visibility
 
-        public InstanceSetSearchDescriptor_VisibilitySearchDescriptor Find_Private => new()
+        InstanceSetSearchDescriptor_VisibilitySearchDescriptor Find_Private => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Private),
@@ -162,11 +184,11 @@ namespace F10Y.Z0003.Z002
             VisibilitySearchDescriptor = Instances.VisibilitySearchDescriptors.Find_Private
         };
 
-        public InstanceSetSearchDescriptor_VisibilitySearchDescriptor Find_Public => new()
+        InstanceSetSearchDescriptor_VisibilitySearchDescriptor Find_Public => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
                 nameof(Find_Public),
-                "Find public instance sets.",
+                "Find instance sets.",
                 "3B4B3332-4A78-48C5-B7CE-0E2A786AC31A")
             ,
             Value_IfMissingDescriptor = true,

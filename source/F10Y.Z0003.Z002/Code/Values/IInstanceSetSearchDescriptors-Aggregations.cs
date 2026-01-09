@@ -7,7 +7,18 @@ namespace F10Y.Z0003.Z002
 {
     public partial interface IInstanceSetSearchDescriptors
     {
-        public InstanceSetSearchDescriptor_Aggregate Find_Example_PathAndPathPartValues => Instances.InstanceSetSearchDescriptorOperator.From(
+        InstanceSetSearchDescriptor_Aggregate Find_DomainName_Values => Instances.InstanceSetSearchDescriptorOperator.From(
+            Instances.DescriptorOperator.From(
+                nameof(Find_DomainName_Values),
+                "Find domain name values.",
+                "77279980-FA2A-4479-BC3F-2BA0B5DDFD7D"),
+            Instances.ArrayOperator.From<IInstanceSetSearchDescriptor>(
+                this.Find_Domain_DomainNames,
+                this.Find_Values
+            )
+        );
+
+        InstanceSetSearchDescriptor_Aggregate Find_Example_PathAndPathPartValues => Instances.InstanceSetSearchDescriptorOperator.From(
             Instances.DescriptorOperator.From(
                 nameof(Find_Example_PathAndPathPartValues),
                 "Find example path and path-part values.",
@@ -19,7 +30,7 @@ namespace F10Y.Z0003.Z002
             )
         );
 
-        public InstanceSetSearchDescriptor_Aggregate Find_ProjectXmlNodeNames_Values => Instances.InstanceSetSearchDescriptorOperator.From(
+        InstanceSetSearchDescriptor_Aggregate Find_ProjectXmlNodeNames_Values => Instances.InstanceSetSearchDescriptorOperator.From(
             Instances.DescriptorOperator.From(
                 nameof(Find_ProjectXmlNodeNames_Values),
                 "Find project XML node name values (absolute, direct, unadorned).",
@@ -31,7 +42,7 @@ namespace F10Y.Z0003.Z002
             )
         );
 
-        public InstanceSetSearchDescriptor_Aggregate Find_ProjectXmlNodeNames_Values_Public => Instances.InstanceSetSearchDescriptorOperator.From(
+        InstanceSetSearchDescriptor_Aggregate Find_ProjectXmlNodeNames_Values_Public => Instances.InstanceSetSearchDescriptorOperator.From(
             Instances.DescriptorOperator.From(
                 nameof(Find_ProjectXmlNodeNames_Values),
                 "Find public project XML node name values (absolute, direct, unadorned).",

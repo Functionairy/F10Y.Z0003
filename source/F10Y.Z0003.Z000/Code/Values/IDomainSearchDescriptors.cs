@@ -18,12 +18,12 @@ namespace F10Y.Z0003.Z000
 #pragma warning restore IDE1006 // Naming Styles
 
 
-        /// <inheritdoc cref="Z0005.IDomains.InstanceSet_Machinery"/>
+        /// <inheritdoc cref="Z0005.IDomainNames.InstanceSet_Machinery"/>
         DomainSearchDescriptor Find_InstanceSetMachinery => Instances.DomainSearchDescriptorOperator.From(
-            Instances.Domains.InstanceSet_Machinery);
+            Instances.DomainNames.InstanceSet_Machinery);
 
-        /// <inheritdoc cref="Z0008.IDomains.StaticHtml"/>
+        /// <inheritdoc cref="Z0008.IDomainNames.StaticHtml"/>
         DomainSearchDescriptor Find_StaticHtml => Instances.DomainSearchDescriptorOperator.From(
-            Instances.Domains.StaticHtml);
+            Instances.DomainNames.StaticHtml);
     }
 }
