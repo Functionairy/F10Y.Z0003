@@ -25,6 +25,18 @@ namespace F10Y.Z0003.Z002
 
         #region Domains
 
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_SetEqualityOperationDescriptor_Supersets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_SetEqualityOperationDescriptor => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *superset* of the set equality operation descriptor domain set.",
+                "2B1ACF56-A519-403E-8A8E-4013D14E644C")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_SetEqualityOperationDescriptor_Supersets
+        };
+
         InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_CSharp => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
@@ -45,6 +57,18 @@ namespace F10Y.Z0003.Z002
             ,
             Value_IfMissingDescriptor = false,
             DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_DomainNames
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_EqualityOperationDescriptor_Supersets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_EqualityOperationDescriptor => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *superset* of the equality operation descriptor domain set.",
+                "1205DE86-B797-4C4D-A00D-F67ED9030B28")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_EqualityOperationDescriptor_Supersets
         };
 
         InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_Examples => new()
@@ -80,6 +104,54 @@ namespace F10Y.Z0003.Z002
             DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_ProjectXmlNodeNames_Subsets
         };
 
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_dotNETProjectXmlNodeNames_Subsets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_dotNETProjectXmlNodeNames => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *subset* of the .NET project XML node names domain set.",
+                "7BA59336-85FC-440F-864E-9DD55F1A7EEA")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_dotNETProjectXmlNodeNames_Subsets
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_dotNETProjectXmlElementNames_Subsets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_dotNETProjectXmlElementNames => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *subset* of the .NET project XML element names domain set.",
+                "DD0E2523-4AEE-4F14-B865-339751D32006")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_dotNETProjectXmlElementNames_Subsets
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_dotNETProjectXml_Names_Subsets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_dotNETProjectXml_Names_Subsets => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *subset* of the .NET project XML element names domain set.",
+                "DADC8740-36F0-4467-835D-941E26505050")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_dotNETProjectXml_Names_Subsets
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_dotNETProjectXml_Names_Supersets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_dotNETProjectXml_Names_Supersets => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *superset* of the .NET project XML element names domain set.",
+                "2AFAAB8F-EC31-49F6-ACD9-3188A81F3D27")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_dotNETProjectXml_Names_Supersets
+        };
+
         InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_ProjectXmlNodeNames_Supersets => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
@@ -89,6 +161,42 @@ namespace F10Y.Z0003.Z002
             ,
             Value_IfMissingDescriptor = false,
             DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_ProjectXmlNodeNames_Supersets
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_dotNETProjectXmlNodeNamesTest_Subsets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_dotNETProjectXmlNodeNamesTest_Subsets => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *subset* of the .NET project XML element names domain set.",
+                "589061E4-7D40-4BD2-9053-FBD3074E2981")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_dotNETProjectXmlNodeNamesTest_Subsets
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_dotNETProjectXmlNodeNamesTest_Supersets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_dotNETProjectXmlNodeNamesTest_Supersets => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *superset* of the .NET project XML element names domain set.",
+                "7D704D28-78ED-4407-83CE-6AD01CEF2F03")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_dotNETProjectXmlNodeNamesTest_Supersets
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IDomainSearchDescriptors.Find_dotNETProjectXml_Supersets"/>
+        InstanceSetSearchDescriptor_DomainSearchDescriptor Find_Domain_dotNETProjectXml_Supersets => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Domain_ProjectXmlNodeNames_Subsets),
+                "Find instance sets with domain name sets that are a *superset* of the .NET project XML domain set.",
+                "64398A58-18AD-4BF7-A364-B1725CCA1A4B")
+            ,
+            Value_IfMissingDescriptor = false,
+            DomainSearchDescriptor = Instances.DomainSearchDescriptors.Find_dotNETProjectXml_Supersets
         };
 
         #endregion
@@ -110,6 +218,43 @@ namespace F10Y.Z0003.Z002
 
         #region Instance Varieties
 
+        /// <inheritdoc cref="Z0005.Z002.IInstanceVarietySearchDescriptors.DataTypes"/>
+        InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor Find_DataTypes => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_DataTypes),
+                "Find data type instance sets.",
+                "692DFCDC-E33B-4774-89A5-4B69417270D5")
+            ,
+            Value_IfMissingDescriptor = false, // Must have the instance variety.
+            InstanceVarietySearchDescriptor = Instances.InstanceVarietySearchDescriptors.DataTypes
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IInstanceVarietySearchDescriptors.Functions"/>
+        InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor Find_Functions => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Functions),
+                "Find function instance sets.",
+                "EDF68BB0-6E96-4590-81E4-1DFFF18A6995")
+            ,
+            Value_IfMissingDescriptor = false, // Must have the instance variety.
+            InstanceVarietySearchDescriptor = Instances.InstanceVarietySearchDescriptors.Functions
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IInstanceVarietySearchDescriptors.Scripts"/>
+        InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor Find_Scripts => new()
+        {
+            Descriptor = Instances.DescriptorOperator.From(
+                nameof(Find_Scripts),
+                "Find script instance sets.",
+                "2760D369-F093-4712-863E-E28F4166ADAA")
+            ,
+            Value_IfMissingDescriptor = false, // Must have the instance variety.
+            InstanceVarietySearchDescriptor = Instances.InstanceVarietySearchDescriptors.Scripts
+        };
+
+        /// <inheritdoc cref="Z0005.Z002.IInstanceVarietySearchDescriptors.Values"/>
         InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor Find_Values => new()
         {
             Descriptor = Instances.DescriptorOperator.From(
@@ -129,7 +274,7 @@ namespace F10Y.Z0003.Z002
                 "CFA67398-B485-4DFD-A173-3B11FE53317C")
             ,
             Value_IfMissingDescriptor = false, // Must have the instance variety.
-            InstanceVarietySearchDescriptor = Instances.InstanceVarietySearchDescriptors.Absolute_Direct_Unadorned
+            InstanceVarietySearchDescriptor = Instances.InstanceVarietySearchDescriptors.Values_Absolute_Direct_Unadorned
         };
 
         #endregion

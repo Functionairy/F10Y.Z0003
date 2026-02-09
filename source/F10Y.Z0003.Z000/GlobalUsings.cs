@@ -5,7 +5,7 @@ global using DomainDescriptorAttribute = F10Y.L0026.T007.DomainDescriptorAttribu
 global using IInstanceSetFlowDescriptor = F10Y.L0026.T003.IInstanceSetFlowDescriptor;
 
 global using ApplicabilityDescriptor = F10Y.L0026.T001.ApplicabilityDescriptor;
-global using Descriptor = F10Y.L0062.L002.T000.Descriptor;
+global using Descriptor = F10Y.L0005.L004.T000.Descriptor;
 global using DependencySetDescriptor_None = F10Y.L0026.T001.DependencySetDescriptor_None;
 global using DomainDescriptor_Set = F10Y.L0026.T001.DomainDescriptor_Set;
 global using DomainSearchDescriptor = F10Y.L0026.T002.DomainSearchDescriptor;
